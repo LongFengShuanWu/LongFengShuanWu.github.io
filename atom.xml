@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-27T16:31:08.447Z</updated>
+  <updated>2023-11-05T07:46:59.452Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux延长续航设置</title>
+    <link href="http://example.com/2023/11/05/Linux%E5%BB%B6%E9%95%BF%E7%BB%AD%E8%88%AA%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://example.com/2023/11/05/Linux%E5%BB%B6%E9%95%BF%E7%BB%AD%E8%88%AA%E8%AE%BE%E7%BD%AE/</id>
+    <published>2023-11-05T07:00:10.000Z</published>
+    <updated>2023-11-05T07:46:59.452Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="相关视频：极致省电，延长续航，笔记本节能可以这么搞-哔哩哔哩视频-bilibili-com"><a href="#相关视频：极致省电，延长续航，笔记本节能可以这么搞-哔哩哔哩视频-bilibili-com" class="headerlink" title="相关视频：极致省电，延长续航，笔记本节能可以这么搞-哔哩哔哩视频 (bilibili.com)"></a>相关视频：<a href="https://www.bilibili.com/list/watchlater?bvid=BV1rE411G7Bd&oid=96032995">极致省电，延长续航，笔记本节能可以这么搞-哔哩哔哩视频 (bilibili.com)</a></h2><h1 id="部分摘要："><a href="#部分摘要：" class="headerlink" title="部分摘要："></a>部分摘要：</h1><h2 id="英伟达显卡驱动，关闭显卡"><a href="#英伟达显卡驱动，关闭显卡" class="headerlink" title="英伟达显卡驱动，关闭显卡"></a>英伟达显卡驱动，关闭显卡</h2><hr><h1 id="其他软件"><a href="#其他软件" class="headerlink" title="其他软件"></a>其他软件</h1><h2 id="tlp"><a href="#tlp" class="headerlink" title="tlp"></a>tlp</h2><h3 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h3><ol><li>tlp</li><li>tlp-rdw</li><li>tlpui-git(图形化设置)</li></ol><h2 id="smartmontools-机械硬盘降速"><a href="#smartmontools-机械硬盘降速" class="headerlink" title="smartmontools(机械硬盘降速)"></a>smartmontools(机械硬盘降速)</h2><h2 id="x86-energy-perf-policy-CPU高级节能模式"><a href="#x86-energy-perf-policy-CPU高级节能模式" class="headerlink" title="x86_energy_perf_policy(CPU高级节能模式)"></a>x86_energy_perf_policy(CPU高级节能模式)</h2><h2 id="ethtool-网络唤醒（禁用）"><a href="#ethtool-网络唤醒（禁用）" class="headerlink" title="ethtool(网络唤醒（禁用）)"></a>ethtool(网络唤醒（禁用）)</h2><h2 id="thinkPad专用–tp-smapi-充电阀值和电池校准"><a href="#thinkPad专用–tp-smapi-充电阀值和电池校准" class="headerlink" title="thinkPad专用–tp_smapi(充电阀值和电池校准)"></a>thinkPad专用–tp_smapi(充电阀值和电池校准)</h2><h2 id="CPU-Sandy-Bridge以上–acpi-call-充电阀值和电池校准"><a href="#CPU-Sandy-Bridge以上–acpi-call-充电阀值和电池校准" class="headerlink" title="CPU-Sandy Bridge以上–acpi_call(充电阀值和电池校准)"></a>CPU-Sandy Bridge以上–acpi_call(充电阀值和电池校准)</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;相关视频：极致省电，延长续航，笔记本节能可以这么搞-哔哩哔哩视频-bilibili-com&quot;&gt;&lt;a href=&quot;#相关视频：极致省电，延长续航，笔记本节能可以这么搞-哔哩哔哩视频-bilibili-com&quot; class=&quot;headerlink&quot; title=&quot;相关</summary>
+      
+    
+    
+    
+    
+    <category term="技术记录" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>molle简单介绍</title>
