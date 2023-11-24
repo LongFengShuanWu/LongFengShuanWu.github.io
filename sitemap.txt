@@ -1,3 +1,4 @@
+http://example.com/about/index.html
 http://example.com/2023/11/07/Ubuntu22-04%E4%B8%8B%E5%AE%89%E8%A3%85fusuma/
 http://example.com/2023/11/05/Linux%E5%BB%B6%E9%95%BF%E7%BB%AD%E8%88%AA%E8%AE%BE%E7%BD%AE/
 http://example.com/2023/11/24/hexo%E5%AF%BC%E8%88%AA%E9%A1%B5%E9%85%8D%E7%BD%AE/
