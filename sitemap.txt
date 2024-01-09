@@ -30,10 +30,10 @@ http://example.com/2023/09/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E8%AE%B0%E5%BD%95/
 http://example.com/2023/09/28/HelloWorld/
 http://example.com/2023/09/28/hello-world/
 http://example.com/
-http://example.com/tags/Linux%E8%BD%AF%E4%BB%B6/
-http://example.com/tags/%E5%A5%BD%E7%89%A9%E7%A0%94%E7%A9%B6/
-http://example.com/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/
 http://example.com/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80/
+http://example.com/tags/Linux%E8%BD%AF%E4%BB%B6/
+http://example.com/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/
+http://example.com/tags/%E5%A5%BD%E7%89%A9%E7%A0%94%E7%A9%B6/
 http://example.com/tags/%E6%84%9F%E8%A8%80/
 http://example.com/tags/%E8%AE%B0%E7%BB%84%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/
 http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/
