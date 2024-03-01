@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-27T14:08:43.261Z</updated>
+  <updated>2024-03-01T07:54:36.083Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>voron0.2r1配置踩坑</title>
+    <link href="http://example.com/2024/03/01/voron0.2r1%E9%85%8D%E7%BD%AE%E8%B8%A9%E5%9D%91/"/>
+    <id>http://example.com/2024/03/01/voron0.2r1%E9%85%8D%E7%BD%AE%E8%B8%A9%E5%9D%91/</id>
+    <published>2024-03-01T07:52:57.000Z</published>
+    <updated>2024-03-01T07:54:36.083Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="物料购买篇"><a href="#物料购买篇" class="headerlink" title="物料购买篇"></a>物料购买篇</h1><p>中文参考这个：<a href="https://www.bilibili.com/video/BV1G14y1D7Ne/?spm_id_from=333.788.recommend_more_video.0&vd_source=5b8bf6305b0fd9908d0f4a435e1f0d74">Voron0.2r1 史上最低装机方案 百元级 高速3D打印机 采购指南 有手就能装好的_哔哩哔哩_bilibili</a><br>我用的其中标准版，基本上都齐全。基本照着买就行<br>几个建议：</p><ul><li>工具：拧螺丝需要1.3mm、1.5mm、2mm这几个口径的内六角扳手,**尤其时1.3mm的内六角扳手，大部分的内六角套装没有！！！</li><li>可以把用来连接固定底座打印件的M3X40半圆头螺栓 （BHCS）换成M3X45以上的，连接时可能会出现滑丝问题，40的长度不太够，45的可以打深点</li><li>都备点插簧插片（4.8mm的），X254的各种插头，插座，还有压线钳（压线钳别买错了，有很多型号不支持X254），用来制作延长线（对于不会焊接的很友好）压线教程如下：<a href="https://www.bilibili.com/video/BV1Hf4y1b72P/?spm_id_from=333.337.search-card.all.click&vd_source=5b8bf6305b0fd9908d0f4a435e1f0d74">【soso工坊】JST XH X2.54端子制作教程_哔哩哔哩_bilibili</a></li><li>消隙螺母：那份表上说不要议买双切边的，但实际组装中感觉需要（没双切边的需要削掉一边），建议两种都买，一个不行换另一个</li><li>封箱板有一个是要两个的（左右版是一个文件，文件名没标注数量）</li><li>断料检测：气动接头要拆开，嫌麻烦可以不装</li><li>皮带有内芯是钢丝的聚酯皮带和内芯是玻璃纤维的橡胶皮带，买后者，怕买错就盖茨</li><li>屏幕可以不要，真的没啥用，资料还不好找</li><li>3X6和3X8的螺丝多买点，换成国标型材有些地方3X6的不够深需要换成3X8的</li><li>虽说不需要焊接，但还是需要一根尖头电烙铁的（热熔螺母需要）</li></ul><h1 id="刷机篇"><a href="#刷机篇" class="headerlink" title="刷机篇"></a>刷机篇</h1><h2 id="kiauh网络问题"><a href="#kiauh网络问题" class="headerlink" title="kiauh网络问题"></a>kiauh网络问题</h2><p>搞了ssr的局域网共享，最后还是gitee(<a href="https://gitee.com/miroky/kiauh">kiauh: kiauh 国内镜像 其中klipper和moonraker指向本账号的其他两个代码库。 V5.0.0同步更新。 V4.0.0的用户请在升级后运行path_patch_4to5.sh进行迁移。 迁移后请务必检查更新[virtual_sdcard]的路径到printer_data{_x}&#x2F;gcodes (gitee.com)</a> )</p><p>SSH连接推荐：MobaXterm的汉化版(<a href="https://github.com/RipplePiam/MobaXterm-Chinese-Simplified/releases/tag/v0.23.109">RipplePiam&#x2F;MobaXterm-Chinese-Simplified: MobaXterm 简体中文汉化版🌏🖥🖥🖥 【💌慢工精心制作，”提示”也汉化💻】 【😍控件布局精细调整】 (github.com)</a>)</p><h1 id="可能会遇到的坑"><a href="#可能会遇到的坑" class="headerlink" title="可能会遇到的坑"></a>可能会遇到的坑</h1><ul><li>铝型材切割不平（找个靠谱点的）</li><li>热床保险丝会顶到调平螺母（这保险丝不要也罢）</li><li>喷头漏塑料（拧紧点）</li><li>电机接线（看好线序，不拍接反怕接错）</li><li>胶带（胶带要遇热才能张牢）</li><li>电机配置（配置文件有写咋改，看不懂扔翻译）</li><li>拖链角度不够（拿刀自己修）</li></ul><h1 id="切片软件"><a href="#切片软件" class="headerlink" title="切片软件"></a>切片软件</h1><p>Cura5以上的都有V0的预设，<br>测试过4.8的，用V2.4的预设也可以（记得调尺寸）</p><p>以上</p><hr><h1 id="附："><a href="#附：" class="headerlink" title="附："></a>附：</h1><h2 id="价格表："><a href="#价格表：" class="headerlink" title="价格表："></a>价格表：</h2><table><thead><tr><th>分类</th><th>价格</th><th>来源</th></tr></thead><tbody><tr><td>打印套件</td><td>159</td><td>咸鱼</td></tr><tr><td>BMG挤出机套件</td><td>17</td><td>淘宝</td></tr><tr><td>主板</td><td>208</td><td>淘宝</td></tr><tr><td>散热</td><td>4.8</td><td>淘宝</td></tr><tr><td>闪迪64gTF卡</td><td>37</td><td>淘宝</td></tr><tr><td>雷赛35CM04步进电机*&#x2F;2</td><td>130</td><td>淘宝</td></tr><tr><td>42丝杆步进电机</td><td>59</td><td>淘宝</td></tr><tr><td>3010涡轮*&#x2F;2</td><td>18</td><td>淘宝</td></tr><tr><td>3010风扇*&#x2F;2</td><td>20</td><td>淘宝</td></tr><tr><td>欧姆龙微动开关D2F-5</td><td>3.48</td><td>淘宝</td></tr><tr><td>电源线</td><td>2.4</td><td>淘宝</td></tr><tr><td>AC-01插座</td><td>2.87</td><td>淘宝</td></tr><tr><td>5*&#x2F;20保险丝</td><td>1</td><td>淘宝</td></tr><tr><td>散热片</td><td>1.28</td><td>淘宝</td></tr><tr><td>消隙螺母</td><td>2.8</td><td>淘宝</td></tr></tbody></table><hr><p>现就写到这，过几天看看要不要出个视频</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;物料购买篇&quot;&gt;&lt;a href=&quot;#物料购买篇&quot; class=&quot;headerlink&quot; title=&quot;物料购买篇&quot;&gt;&lt;/a&gt;物料购买篇&lt;/h1&gt;&lt;p&gt;中文参考这个：&lt;a href=&quot;https://www.bilibili.com/video/BV1G14y1D7N</summary>
+      
+    
+    
+    
+    <category term="心得分享" scheme="http://example.com/categories/%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="3D打印" scheme="http://example.com/tags/3D%E6%89%93%E5%8D%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>CloudeFlare修改301重定向心得</title>
@@ -477,31 +501,6 @@
       
       
     <summary type="html">&lt;h3 id=&quot;IGP：内部网关协议，用于发现路由和计算路由&quot;&gt;&lt;a href=&quot;#IGP：内部网关协议，用于发现路由和计算路由&quot; class=&quot;headerlink&quot; title=&quot;IGP：内部网关协议，用于发现路由和计算路由&quot;&gt;&lt;/a&gt;IGP：内部网关协议，用于发现路由和计算</summary>
-      
-    
-    
-    
-    <category term="技术记录" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="路由交换基础" scheme="http://example.com/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>05.IP路由交换基础--静态路由</title>
-    <link href="http://example.com/2023/11/05/5.IP%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80--%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/"/>
-    <id>http://example.com/2023/11/05/5.IP%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80--%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/</id>
-    <published>2023-11-05T07:00:10.000Z</published>
-    <updated>2023-11-24T07:16:37.238Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="ICMP-协议"><a href="#ICMP-协议" class="headerlink" title="ICMP 协议"></a>ICMP 协议</h1><p>作用：为网络层提供或传递差错检测和网络控制信息</p><h2 id="1-连通性检测（差错检测）"><a href="#1-连通性检测（差错检测）" class="headerlink" title="1. 连通性检测（差错检测）"></a>1. 连通性检测（差错检测）</h2><p>当网络设备需要检测是否能到达目的设备时，可以发送一个 ICMP 的 Echo Request 报文到目的设备进行检测<br>目的设备回复后，则证明网络连通（并返回传输过程中的延迟、丢包率、网络抖动等信息）<br>目的设备无回复，则返回差错消息（如：目的地址不可达、主机不可达等）<br>作用：用于检测网络连通性，及网络品质</p><h2 id="2-重定向（控制信息）"><a href="#2-重定向（控制信息）" class="headerlink" title="2. 重定向（控制信息）"></a>2. 重定向（控制信息）</h2><p>当设备访问不同网段的目的设备时，会寻找网关设备，网关设备会根据 IP 路由表转发数据包<br>当网关设备发现发起访问的设备有更优的路径，会通过重定向报文告知发起访问的设备<br>（如：访问服务器 Server 1 更好的下一跳是 R2）则会通过重定向报文告知发起访问的设备<br>下一次转发数据时，发起访问的设备会直接找到 R2 进行转发</p><h2 id="3-TTL-超时（差错控制）"><a href="#3-TTL-超时（差错控制）" class="headerlink" title="3. TTL 超时（差错控制）"></a>3. TTL 超时（差错控制）</h2><p>当 TTL &#x3D; 0 时，设备会丢弃数据包，并且向源设备发起 ICMP（type&#x3D;11）的 TTL 超时通告<br>利用该特性，可以感知传输路径上，数据包所经过的设备有哪些</p><p>例如：测试 R1-R2-R3-R4 的传输路径<br>tracert 工具，发起测试时</p><ol><li>默认会把 TTL 设置为 1，R1 把数据包发给 R4（TTL&#x3D;1）</li><li>到达 R2 后，数据包被丢弃，R2 告知 R1 （TTL 超时）</li><li>R1 再次把 TTL 修改为 2 发起测试（重复步骤 1 和 2）</li><li>最终 R1 得知到达 R4 所经过的设备有（R2-R3-R4）</li></ol><h2 id="配置命令："><a href="#配置命令：" class="headerlink" title="配置命令："></a>配置命令：</h2><p><code>ping + 目的地址</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ping  10.1.1.1   可以测试本设备是否能够到达 10.1.1.1 设备，同时能够返回传输的延迟、丢包率、抖动情况等信息<br></code></pre></td></tr></table></figure><p><code>ping -a  + 源 IP 地址 来发起访问</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ping -a  192.168.1.1   10.1.1.1// 使用源地址：192.168.1.1 对 10.1.1.1 发起访问测试（指定源地址测试）<br></code></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ping -c  1000  10.1.1.1// 测试 10.1.1.1 可达性的时候，发送 1000 个测试报文（默认 5 个）<br></code></pre></td></tr></table></figure><h1 id="路由表"><a href="#路由表" class="headerlink" title="路由表"></a>路由表</h1><h2 id="1-目的地址-掩码"><a href="#1-目的地址-掩码" class="headerlink" title="1. 目的地址&#x2F;掩码"></a>1. 目的地址&#x2F;掩码</h2><p>用于告知管理员或者设备，本路由器能够到达的目的地址有哪些</p><h2 id="2-协议类型"><a href="#2-协议类型" class="headerlink" title="2. 协议类型"></a>2. 协议类型</h2><p>告知管理员和设备，本条路由是通过哪一种协议学习到的</p><h2 id="3-路由优先级（管理距离）"><a href="#3-路由优先级（管理距离）" class="headerlink" title="3. 路由优先级（管理距离）"></a>3. 路由优先级（管理距离）</h2><p>是用于衡量路由协议的优先程度的标准（0—255）越小越好</p><ul><li>Direct （直连路由是设备自身接口的 IP 地址）最优，优先级为：0<ul><li>内部优先级（是设备定义的，无法修改的）</li></ul></li><li>Static  （静态路由是由管理员手工指定）优先级：60<ul><li>当不同的协议，优先级一致时，无法比较开销，设备会根据内部优先级比较</li><li>direct    0</li></ul></li></ul><h3 id="动态路由协议"><a href="#动态路由协议" class="headerlink" title="动态路由协议"></a>动态路由协议</h3><p>OSPF  10</p><h4 id="OSPF"><a href="#OSPF" class="headerlink" title="OSPF"></a>OSPF</h4><ol><li>内部路由：优先级：10<br> IS-IS   level-1    15</li><li>外部路由（O_ASE、NSSA）：优先级：150<br> IS-IS   level-2    18<br> Static     60</li></ol><ul><li>RIP优先级：100<br>  RIP         100<br>  EBGP      20</li></ul><h4 id="IS-IS"><a href="#IS-IS" class="headerlink" title="IS-IS"></a>IS-IS</h4><ol><li>level-1   优先级：15IBGP       200</li><li>level-2   优先级：15（不同的路由协议，设备会默认先比较外部优先级，当外部优先级一致的时候才会比较内部优先级）</li></ol><h4 id="BGP"><a href="#BGP" class="headerlink" title="BGP"></a>BGP</h4><ol><li>IBGP  优先级：255 </li><li>EBGP  优先级：255</li></ol><p><strong>外部优先级是可以修改的</strong></p><hr><p><strong>补充：相同目的地址和掩码的路由，路由表只会保留最优的一条（除：负载均衡）</strong><br>例如：相同的路由（不同协议会比较优先级）</p><ol><li><p>1.1.1.1&#x2F;32    OSPF</p></li><li><p>1.1.1.1&#x2F;32    IS-IS设备会优先级 1</p><p> 补充：如果相同的路由，协议也一致，优先级也一样，则比较 4（开销值）</p></li></ol><h2 id="4-开销值（距离）"><a href="#4-开销值（距离）" class="headerlink" title="4. 开销值（距离）"></a>4. 开销值（距离）</h2><p>开销值越小，代表设备到达目的地址越近（越小越好）<br>例如： </p><ol><li>1.1.1.1&#x2F;32   OSPF   cost&#x3D;10</li><li>1.1.1.1&#x2F;32    OSPF  cost&#x3D;20   则优选 1</li></ol><h2 id="5-下一跳："><a href="#5-下一跳：" class="headerlink" title="5. 下一跳："></a>5. 下一跳：</h2><p>设备到达目的地址有可能不是直连的（并非直达）需要根据下一跳设备。进行逐跳转发</p><h2 id="6-出接口："><a href="#6-出接口：" class="headerlink" title="6. 出接口："></a>6. 出接口：</h2><p>告知设备数据包应该从哪一个接口出去</p><h1 id="静态路由："><a href="#静态路由：" class="headerlink" title="静态路由："></a>静态路由：</h1><p>以太网中必须指定下一跳（以太网为广播型多路访问网络类型，从一个接口出去后可能会到达多个其他设备，所以必须指定下一跳设备及接口地址）<br>    点对点网络可以指定下一跳或出接口（1:1 的链接，从一个接口出去一定能够到达对端设备）</p><p>配置命令：（系统配置视图）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ip route-static   目的地址  +  掩码   +  下一跳 / 出接口<br>例： ip  route-static  1.1.1.1   32   10.1.12.2// 配置到达目的地址为：1.1.1.1/32 的静态路由，下一跳地址为：10.1.12.2<br>ip  route-static  1.1.1.1   32    P2/0/0// 配置到达目的地址为：1.1.1.1/32 的静态路由，指定出接口为：P2/0/0<br></code></pre></td></tr></table></figure><h2 id="1-等价路由"><a href="#1-等价路由" class="headerlink" title="1. 等价路由"></a>1. 等价路由</h2><ul><li>当访问目的设备时，有多个下一跳接口和链路，则可以配置多条静态路由</li><li>这些静态路由的优先级和开销值都一致，可以成为负责均衡路由（等价路由），设备根据 5 元组（源、目 IP；协议号；源、目端口号）进行计算</li><li>根据不同的计算结果选用任意的负载链路转发<br>（应用场景：一般在带宽或设备数量一致的场景下使用）</li></ul><h2 id="2-浮动路由"><a href="#2-浮动路由" class="headerlink" title="2. 浮动路由"></a>2. 浮动路由</h2><ul><li>当访问目的设备时，有多个下一跳接口和链路，则可以配置多条静态路由</li><li>这些静态路由的优先级不一致，可以设置高带宽的静态路由（优先级更优，数值更小）<br>  低带宽的静态路由可以设置为备份路由（优先级数值更大）<br>  （主备）正常情况下使用主路由（带宽高的）</li><li>系统配置视图（display  this）可以查看静态路由配置<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ip route-static   目的地址  +  掩码   +  下一跳 / 出接口<br>ip route-static 1.1.1.1   32   10.1.23.3 preference 55// 例如把静态路由的优先级改为 55（默认值为：60）1—255（越小越优）<br></code></pre></td></tr></table></figure></li></ul><h2 id="3-CIDR-与-VLSM"><a href="#3-CIDR-与-VLSM" class="headerlink" title="3. CIDR 与 VLSM"></a>3. CIDR 与 VLSM</h2><ul><li>VLSM（可变长子网掩码）把一个子网变成多个子网的技术<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">192.168.1.0/24向主机位借位，192.168.1.0/25 （0—127）    /    192.168.1.128/25（128—255）<br></code></pre></td></tr></table></figure></li><li>CIDR（无类域间路由）可以把多个子网变成一个子网的技术<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">例如：把  192.168.1.0/25 和 192.168.1.128/25 合成  192.168.1.0/24 的技术，向主机位借位<br>172.16.16.0/24把相同的地址保留（左往右）172.16（保留） = 16 bit<br>172.16.17.0/24不同的进行二进制换算16、17、18<br>172.16.18.0/2416= 0001  0000<br>17= 0001  0001<br>18= 0001  0010把相同部分的保留下来 0001 00XX（相同的仅保留了 6 bit)<br>最终得出汇总后的地址为：  172.16.16.0/22<br>主机位向网络位借位（借了 2 位）<br></code></pre></td></tr></table></figure></li></ul><h2 id="4、为了避免环路的发生"><a href="#4、为了避免环路的发生" class="headerlink" title="4、为了避免环路的发生"></a>4、为了避免环路的发生</h2><ul><li>内网互访可以使用 CIDR 汇总路由，减少路由条目的数量还能减少环路的产生</li><li>如果是缺省路由，更容易产生环路，缺省路由一般用于出口路由器<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ip route-static  0.0.0.0   0   10.1.12.2（缺省路由）<br></code></pre></td></tr></table></figure></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;ICMP-协议&quot;&gt;&lt;a href=&quot;#ICMP-协议&quot; class=&quot;headerlink&quot; title=&quot;ICMP 协议&quot;&gt;&lt;/a&gt;ICMP 协议&lt;/h1&gt;&lt;p&gt;作用：为网络层提供或传递差错检测和网络控制信息&lt;/p&gt;
-&lt;h2 id=&quot;1-连通性检测（差错检测）&quot;</summary>
       
     
     
