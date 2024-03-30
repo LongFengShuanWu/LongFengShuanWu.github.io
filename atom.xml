@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-03-01T07:54:36.083Z</updated>
+  <updated>2024-03-30T14:30:00.330Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Voron2.4构建心得</title>
+    <link href="http://example.com/2024/03/30/Voron2.4%E6%9E%84%E5%BB%BA%E5%BF%83%E5%BE%97/"/>
+    <id>http://example.com/2024/03/30/Voron2.4%E6%9E%84%E5%BB%BA%E5%BF%83%E5%BE%97/</id>
+    <published>2024-03-30T11:26:41.000Z</published>
+    <updated>2024-03-30T14:30:00.330Z</updated>
+    
+    <content type="html"><![CDATA[<p>本次打印机在配置上豪气了一回<del>（把钱花在刀把上）</del>。<br>不过因为采用了许多非主流配件，导致踩了非常多的坑。</p><hr><h1 id="采购篇"><a href="#采购篇" class="headerlink" title="采购篇"></a>采购篇</h1><p>这次的采购基本基于voron网站给的bom表，不过那张表有几个算是比较坑的地方。<br>首先，网站的清单是以voron2.4（AB头）为蓝本的，而我的是R2版本（SB头），导致多买了个电机，少了几种螺丝。采买的时候记得把SB头的螺丝，电机，风扇算进去，而且很多接头其实都用不到（弱电接线基本就是XH254端子）。快速接线端子是真的好用。</p><h1 id="电气篇"><a href="#电气篇" class="headerlink" title="电气篇"></a>电气篇</h1><p>主板方面采用了必趣的M8Pv2.0主板+CBB方案，好处是省了5V的电源，电器仓接线可以省好多。<br>喷头上也是用了必趣的EBB2209(PR2040)can板，然后挖了个多MCU连接和can板连接的坑（话说M8P的can连接的固件配置手册上没有，还是找客服要的，巨坑）。<br>因此没有现成的配置文件用，只能对着其他主板的配置文件改。</p><h1 id="klicky探针"><a href="#klicky探针" class="headerlink" title="klicky探针"></a>klicky探针</h1><p>还好去年是AI元年，直接把代码扔GPT里面叫他翻译，省心多了，而且能跑。<br>就是这玩意要设置的项太多了，不过设置完后吸探针放探针还挺好玩的。</p><p><strong>这玩意跟原配的z轴归位和冲突，需要注释掉原配的z轴归位。</strong></p><h1 id="摄像头"><a href="#摄像头" class="headerlink" title="摄像头"></a>摄像头</h1><p>这个简单，有教程</p><hr><p>说句实话，拼完后成就感挺高的。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本次打印机在配置上豪气了一回&lt;del&gt;（把钱花在刀把上）&lt;/del&gt;。&lt;br&gt;不过因为采用了许多非主流配件，导致踩了非常多的坑。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;采购篇&quot;&gt;&lt;a href=&quot;#采购篇&quot; class=&quot;headerlink&quot; title=&quot;采购篇&quot;&gt;&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="心得分享" scheme="http://example.com/categories/%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="3D打印" scheme="http://example.com/tags/3D%E6%89%93%E5%8D%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>voron0.2r1配置踩坑</title>
@@ -485,30 +511,6 @@
     
     
     <category term="Linux软件" scheme="http://example.com/tags/Linux%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>06.OSPF基础</title>
-    <link href="http://example.com/2023/11/06/7.OSPF%E5%9F%BA%E7%A1%80/"/>
-    <id>http://example.com/2023/11/06/7.OSPF%E5%9F%BA%E7%A1%80/</id>
-    <published>2023-11-06T07:00:10.000Z</published>
-    <updated>2023-11-24T08:25:33.210Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="IGP：内部网关协议，用于发现路由和计算路由"><a href="#IGP：内部网关协议，用于发现路由和计算路由" class="headerlink" title="IGP：内部网关协议，用于发现路由和计算路由"></a>IGP：内部网关协议，用于发现路由和计算路由</h3><ol><li>OSPF</li><li>IS-IS<br>3 RIP</li></ol><h3 id="EGP：外部网关协议，用于传递路由和控制路由优选"><a href="#EGP：外部网关协议，用于传递路由和控制路由优选" class="headerlink" title="EGP：外部网关协议，用于传递路由和控制路由优选"></a>EGP：外部网关协议，用于传递路由和控制路由优选</h3><ol><li>BGP</li></ol><hr><h1 id="OSPF（开放式的最短路径优先）"><a href="#OSPF（开放式的最短路径优先）" class="headerlink" title="OSPF（开放式的最短路径优先）"></a>OSPF（开放式的最短路径优先）</h1><p><strong>概念：Router ID（用于唯一标识一台 OSPF 路由器）</strong></p><h2 id="工作过程："><a href="#工作过程：" class="headerlink" title="工作过程："></a>工作过程：</h2><ol><li>邻居发现</li><li>同步链路状态数据库（LSDB）</li><li>SPF 计算（路径计算）</li><li>路由计算</li></ol><h2 id="报文类型："><a href="#报文类型：" class="headerlink" title="报文类型："></a>报文类型：</h2><ol><li><p>Hello 报文：用于发现邻居和建立邻居关系，也可以维护邻居关系<br> 周期性发送（10s）邻居保持时间（4 倍 &#x3D; 40s）</p></li><li><p>DD 报文：（1）用于邻居之间选举主从关系  （2）用于描述 LSA 的摘要信息</p></li><li><p>LSR 报文：请求本端缺少的 LSA 信息（摘要）</p></li><li><p>LSU 报文：响应对方的请求，并回复明细的 LSA 信息</p></li><li><p>LSAck 报文：确认收到的 LSA 信息（摘要）</p></li></ol><h2 id="状态机："><a href="#状态机：" class="headerlink" title="状态机："></a>状态机：</h2><ol><li><p>Down：代表 OSPF 协议刚使能（未建立邻居关系）</p></li><li><p>Attempt：只出现在 NBMA 网络中（在 NBMA 中需要手工指定邻居的 IP 地址才能发起建立）<br> 当本端指定了邻居地址后，会立刻发送 Hello 报文，如果在一段时间内都没有收到对方发送的 Hello 报文，则会从 Down 切换为 Attempt 状态</p></li><li><p>Init：代表收到了对方的 Hello 报文，但对方的 Hello 报文中没有携带本端设备的 Router id<br> 代表双方还需要进行协商</p></li><li><p>2-Way：代表收到了对方的 Hello 报文，并且对方的 Hello 报文携带本端的 Router id<br> 代表邻居关系已经建立</p></li><li><p>Exstart：代表开始同步链路状态数据库，选举主从关系（设备之间建立邻接关系）<br> Router ID 大的设备会成为主路由器（MS&#x3D;1） Router id 小的为从路由器（MS&#x3D;0）<br> 补充：主从路由器通过序列号确保传输可靠性，从路由器必须向主路由器进行回复（没有回复则 5s 重传一次）</p></li><li><p>Exchange：主从选举完成后，从设备会先进入到 Exchange 给主设备进行确认回复，并携带 LSA 的摘要信息（列表）<br> 主设备收到后也会进入到 Exchange，并且给从设备发送 LSA 的摘要信息</p></li><li><p>Loading：如果双方的 LSDB 没有同步，则进入 Loading 发起 LSA 的请求</p></li><li><p>Full：双方通过 Loading 状态完全同步了 LSDB，最终进入 Full 状态（代表 LSDB 完全同步，邻接状态建立完成）<br> （补充：如果在 Exchange 中发现 LSDB 已经完成同步，也可以直接到达 Full 状态）</p></li></ol><h2 id="网络类型"><a href="#网络类型" class="headerlink" title="网络类型"></a>网络类型</h2><ol><li><p>P2P（点到点）：当 OSPF 协议发现接口类型为（光口或者串口等）链路层协议为 PPP 或 HDLC 则网络类型为 P2P</p></li><li><p>BMA（广播多路访问）：当网络类型为以太网，则默认的网络类型为 BMA</p></li><li><p>NBMA（非广播多路访问）在帧中继（FR）网络中，默认的网络类型 NBMA</p></li><li><p>P2MP（点到多点）：需要手工修改</p></li></ol><p>在 MA 的网络中（BMA、NBMA）会选举 DR 和 BDR 来减少邻接关系<br>选举 DR 会根据优先级来选择（默认：1）可选范围 0—255，但是 0 不参与 DR 选举（大）<br>如果优先级一致，则比较 Router id（大）</p><h2 id="区域分类"><a href="#区域分类" class="headerlink" title="区域分类"></a>区域分类</h2><ol><li>骨干区域：是 OSPF 网络的交通枢纽，所有的非骨干区域（普通区域）都需要与之相连</li><li>普通区域：除 area 0 以外的（除骨干以外的都为普通区域）</li></ol><p>补充：OSPF 是以接口来划分区域的，两个设备的接口如果处于不同区域，则无法建立邻居</p><h2 id="配置命令："><a href="#配置命令：" class="headerlink" title="配置命令："></a>配置命令：</h2><ol><li><p>接口配置 IP 地址</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">interface  G0/0/X<br>ip address  10.1.1.1   24// 进入 G0/0/X 接口，配置接口地址为：10.1.1.1/24<br></code></pre></td></tr></table></figure></li><li><p>创建 OSPF 进程，并且手工指定 router id</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ospf  1   router-id  1.1.1.1// 创建 OSPF 进程，ID=1 ，router id 为：1.1.1.1（每台设备都需要配置独立的 Router id，不能冲突）<br></code></pre></td></tr></table></figure></li><li><p>进入进程后，把设备自身的接口通告给邻居</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">area    0<br>network   10.1.1.1  0.0.0.255// 进入到骨干区域 0 中，把自己的接口 10.1.1.1/24 通告给邻居（掩码 24 = 255.255.255.0  |  通配符 = 0.0.0.255）<br></code></pre></td></tr></table></figure></li></ol><p>（配置方式 2）取代步骤 2 和 3</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ospf  1   router-id  1.1.1.1// 创建 OSPF 进程，配置 Router id<br>area  0// 创建骨干区域 0<br>quit// 退出<br><br>interface  G0/0/X// 进入 G0/0/X 接口<br>ospf  enable  1   area 0// 把该接口发布到 OSPF 进程 1 区域 0 中<br></code></pre></td></tr></table></figure><ol start="4"><li><p>查看 OSPF 邻居关系</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">display   ospf   peer   brief// 查看邻居建立的摘要信息<br></code></pre></td></tr></table></figure></li><li><p>查看路由表</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">display  ip  routing-table// 有对端设备的接口路由才能访问（测试 ping -a 1.1.1.1  4.4.4.4  使用 1.1.1.1 接口访问 4.4.4.4 目的地址）<br></code></pre></td></tr></table></figure></li><li><p>修改接口优先级</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">interface G0/0/XDR 是以物理接口的优先级来进行比较的，默认为：1  越大越好（0—255）   0 不参与 DR 选举<br> ospf dr-priority 100// 例如：把 AR1 的 G0/0/X 接口优先级修改为 100<br></code></pre></td></tr></table></figure></li><li><p>查看是否 DR 设备</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">display  ospf  interface  G0/0/X// 查看 OSPF 接口信息即可<br></code></pre></td></tr></table></figure></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;IGP：内部网关协议，用于发现路由和计算路由&quot;&gt;&lt;a href=&quot;#IGP：内部网关协议，用于发现路由和计算路由&quot; class=&quot;headerlink&quot; title=&quot;IGP：内部网关协议，用于发现路由和计算路由&quot;&gt;&lt;/a&gt;IGP：内部网关协议，用于发现路由和计算</summary>
-      
-    
-    
-    
-    <category term="技术记录" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="路由交换基础" scheme="http://example.com/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
