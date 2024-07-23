@@ -98,6 +98,30 @@
   </entry>
   
   <entry>
+    <title>SKRpico下位机固件刷写</title>
+    <link href="http://example.com/2024/04/28/SKRpico%E4%B8%8B%E4%BD%8D%E6%9C%BA%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%86%99/"/>
+    <id>http://example.com/2024/04/28/SKRpico%E4%B8%8B%E4%BD%8D%E6%9C%BA%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%86%99/</id>
+    <published>2024-04-28T12:08:23.000Z</published>
+    <updated>2024-04-28T12:25:58.575Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="按说明设置固件参数"><a href="#按说明设置固件参数" class="headerlink" title="按说明设置固件参数"></a>按说明设置固件参数</h1><h2 id="进入选项菜单"><a href="#进入选项菜单" class="headerlink" title="进入选项菜单"></a>进入选项菜单</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">cd klipper<br>make menuconfig<br></code></pre></td></tr></table></figure><h2 id="编译固件"><a href="#编译固件" class="headerlink" title="编译固件"></a>编译固件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">make<br></code></pre></td></tr></table></figure><h1 id="固件刷写"><a href="#固件刷写" class="headerlink" title="固件刷写"></a>固件刷写</h1><p>把固件下载到本地<br>下位机照说明书设置好<br>拖进去<br>搞定</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;按说明设置固件参数&quot;&gt;&lt;a href=&quot;#按说明设置固件参数&quot; class=&quot;headerlink&quot; title=&quot;按说明设置固件参数&quot;&gt;&lt;/a&gt;按说明设置固件参数&lt;/h1&gt;&lt;h2 id=&quot;进入选项菜单&quot;&gt;&lt;a href=&quot;#进入选项菜单&quot; class=&quot;head</summary>
+      
+    
+    
+    
+    <category term="技术记录" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="3D打印" scheme="http://example.com/tags/3D%E6%89%93%E5%8D%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>树莓派上位机刷写先前准备</title>
     <link href="http://example.com/2024/04/28/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E4%BD%8D%E6%9C%BA%E5%88%B7%E5%86%99%E5%85%88%E5%89%8D%E5%87%86%E5%A4%87/"/>
     <id>http://example.com/2024/04/28/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E4%BD%8D%E6%9C%BA%E5%88%B7%E5%86%99%E5%85%88%E5%89%8D%E5%87%86%E5%A4%87/</id>
@@ -492,33 +516,6 @@
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;用于设备间传递文件信息（配</summary>
-      
-    
-    
-    
-    <category term="技术记录" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="路由交换基础" scheme="http://example.com/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>12.链路聚合</title>
-    <link href="http://example.com/2023/11/12/13.%E9%93%BE%E8%B7%AF%E8%81%9A%E5%90%88/"/>
-    <id>http://example.com/2023/11/12/13.%E9%93%BE%E8%B7%AF%E8%81%9A%E5%90%88/</id>
-    <published>2023-11-12T07:00:10.000Z</published>
-    <updated>2023-11-24T07:20:07.507Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="链路聚合"><a href="#链路聚合" class="headerlink" title="链路聚合"></a>链路聚合</h1><ul><li><p>交换设备或路由设备之间的中转带宽不足，会导致延迟、抖动、丢包率增加</p></li><li><p>需要添加冗余的链路（多条物理链路，增加带宽）</p></li><li><p>交换设备增加多条冗余的物理链路会导致环路的产生，所以需要运行生成树（运行生成树会导致端口被阻塞，无法增加带宽）</p></li><li><p>使用链路聚合即可增加带宽，又能防止设备间的冗余链路带来的环路问题<br>  （增加带宽、增强可靠性、可以实现链路的负载均衡）</p></li><li><p>可以在不升级物理设备和接口的情况下，把多个物理接口聚合成一个逻辑接口，从而增加带宽</p></li><li><p>链路聚合最大支持 8 条物理链路同时聚合，聚合的成员接口必须满足以下条件</p><ol><li>接口类型   </li><li>带宽  </li><li>双工模式  </li><li>成员接口数量</li></ol></li></ul><h2 id="1-手工模式"><a href="#1-手工模式" class="headerlink" title="1. 手工模式"></a>1. 手工模式</h2><p>手工模式无法通过报文感知邻居的状态，对端成员端口故障也无法感知<br>只适合不支持 LACP 的低端、老旧的设备使用</p><h2 id="2-LACP-模式"><a href="#2-LACP-模式" class="headerlink" title="2. LACP 模式"></a>2. LACP 模式</h2><p>LACP 可以通过周期性的报文，感知邻居状态，同时可以选举主备转发的链路</p><p>补充：聚合后的端口（成员端口会失去原有的特性）后续的链路类型均以 Eth-trunk 属性为主</p><h1 id="配置命令："><a href="#配置命令：" class="headerlink" title="配置命令："></a>配置命令：</h1><ol><li>创建链路聚合端口<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">interface Eth-Trunk 1<br></code></pre></td></tr></table></figure></li><li>修改类型<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">mode lacp-static // 把链路聚合修改为 LACP 静态模式<br>（如果加入了成员接口，则无法再重新修改模式，需要先把成员接口退出）<br></code></pre></td></tr></table></figure></li><li>加入成员链路<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">trunkport GigabitEthernet 0/0/10 to 0/0/11// 把 G0/0/10 和 G0/0/11 加入到聚合链路中（端口类型需要明细配置）<br></code></pre></td></tr></table></figure></li></ol><h2 id="可选配置"><a href="#可选配置" class="headerlink" title="可选配置"></a>可选配置</h2><ol start="4"><li><p>设置 LACP 优先级（系统视图）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">lacp priority 100// 设置 LACP 系统优先级，越小越优（0—65535）默认：32768<br></code></pre></td></tr></table></figure><p>其余配置均在主控端完成（主控端优先级越小，越容易成为主控设备）<br>interface  Eth-trunk 接口中配置</p></li><li><p>设置最大活跃链路数量</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">max active-linknumber 2// 例如：成员链路有 3 条，可以设置最大的活跃链路为 2（其中一条为备份链路）<br></code></pre></td></tr></table></figure></li><li><p>设置回切链路和时间</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plaintext"> lacp preempt enable// 当主链路故障，备份链路会立刻进行切换<br> lacp preempt delay 10// 主链路从故障恢复后，需要配置回切（否则不会把新的主接口抢占）<br>设置回切时间为 10s<br>interface 成员接口中配置<br></code></pre></td></tr></table></figure></li><li><p>设置成员接口的优先级</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">interface G0/0/X<br>lacp priority 100// 默认最大 8 条链路转发，如果设置了 max active 链路<br>则可以设置备份链路，链路也会根据优先级进行选举<br>优先级小的为主链路，优先级一样则比较端口 ID（越小越好）<br>默认接口优先级为：32768，取值范围：0—65535<br></code></pre></td></tr></table></figure></li><li><p>​查看配置</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">display  eth-trunk // 查看链路聚合接口的状态、成员信息等<br></code></pre></td></tr></table></figure></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;链路聚合&quot;&gt;&lt;a href=&quot;#链路聚合&quot; class=&quot;headerlink&quot; title=&quot;链路聚合&quot;&gt;&lt;/a&gt;链路聚合&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;交换设备或路由设备之间的中转带宽不足，会导致延迟、抖动、丢包率增加&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;需要</summary>
       
     
     
