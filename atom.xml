@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-08-11T07:38:07.604Z</updated>
+  <updated>2024-08-15T06:34:54.113Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2024/08/11/PositronJMBom%E8%A1%A8/"/>
     <id>http://example.com/2024/08/11/PositronJMBom%E8%A1%A8/</id>
     <published>2024-08-11T07:37:42.000Z</published>
-    <updated>2024-08-11T07:38:07.604Z</updated>
+    <updated>2024-08-15T06:34:54.113Z</updated>
     
     <content type="html"><![CDATA[<h1 id="官方仓库地址："><a href="#官方仓库地址：" class="headerlink" title="官方仓库地址："></a>官方仓库地址：</h1><p><a href="https://github.com/mcfazio2001/JourneyMaker-Positron">https://github.com/mcfazio2001/JourneyMaker-Positron</a></p><h1 id="Bom表（数量可能有错）"><a href="#Bom表（数量可能有错）" class="headerlink" title="Bom表（数量可能有错）"></a>Bom表（数量可能有错）</h1><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>打印件</p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><p>电气件</p><ul><li>6*20热端加热棒</li><li>NTC100K玻封电阻</li><li>IR传感器</li><li>3010风扇</li><li>必趣SKRpico</li><li>树莓派zero2W</li><li>明纬EPP-200-24</li><li>8字孔插座（AC-027）</li><li>8字孔对应的插头</li><li>2510风扇*2个</li><li>4220电机*3个</li><li>5015涡轮</li><li>玻璃热床（找黑心商家买）</li></ul><h2 id="-2"><a href="#-2" class="headerlink" title=""></a></h2><p>挤出机</p><ul><li>HGX挤出机套件</li><li>气动接头和铁氟龙管</li><li>36电机</li></ul><h2 id="-3"><a href="#-3" class="headerlink" title=""></a></h2><p>机加工件</p><ul><li>热端套件（找黑心商家买）</li><li>热床架</li><li>Z轴用3010铝型材250mm</li><li>底板</li><li>XY-Spacer（XY的连接支架）</li><li>z-axis_Rail_Block V2.2（Z轴的连接支架）</li></ul><h2 id="-4"><a href="#-4" class="headerlink" title=""></a></h2><p>硬件</p><ul><li>无头内六角螺丝&#x2F;机丝(M3*6 )*2个</li><li>T5消隙螺母和丝杆225MM（间距1导程4）</li><li>六角螺母（M3 *2.4）*5个</li><li>GT2 20T同步轮（两面平的那种，缸径5）*4个</li><li>MF73ZZ轴承*28个</li><li>平垫片(M3 <em>7</em> 0.2)*8个</li><li>扁平头内六角螺丝（M3 *10)* 29个</li><li>MR117ZZ轴承* 10个</li><li>平垫片(M7 <em>13</em> 0.2)* 40个</li><li>土八字热熔螺母（M3,外径4.5，长5）* 32个</li><li>杯头内六角螺丝（M3 *20）* 10个</li><li>扁平头内六角螺丝（M3 *18)* 3个</li><li>扁平头内六角螺丝（M3 *14)* 15个</li><li>平头内六角螺丝（M3 *8)* 16个</li><li>平头内六角螺丝（M3*14)*5个</li><li>F5-10M轴承* 2个</li><li>MF85ZZ轴承* 2个</li><li>手拧螺母（M6* 16）</li><li>MR115轴承*5个</li><li>GB120内螺纹圆柱形销（M3外径4长12）* 2</li><li>欧标2020型材用T型螺母（M3）* 4</li><li>杯头螺丝（M3 *8）* 4个</li><li>手拧螺母（M6* 25）</li><li>M4六角螺母* 6个</li><li>平头螺丝（M4* 25）</li><li>平头螺丝（M4 *12）* 5个</li><li>平垫片（M5 *10* 0.8）1个</li><li>平头螺丝（M3 *12）* 4个</li><li>平头螺丝（M3*18）* 4个</li><li>土八字热熔螺母（M6,外径8，长6）*32个</li><li>平头螺丝（M3*16）* 2个</li><li>平头螺丝（M3 *20）* 2个</li><li>GT2 16T惰轮(宽6缸径3不带齿)</li><li>硅胶防滑贴（圆形，8*2mm）</li><li>扁平头内六角螺丝（M3*30)* 6个</li><li>3*4圆头螺丝</li></ul><h2 id="-5"><a href="#-5" class="headerlink" title=""></a></h2><p>运动件</p><ul><li>MGW9C_Z-axis_Rail 250mm</li><li>MGN9_X-axis_Rail 250mm</li><li>MGN12C_Y-axis_Rail 250mm</li><li>GT2 3mm同步带 1.9m</li><li>GT2 6mm闭口同步带 192mm</li></ul><hr><p>参考价格<br>896.65+11+135.52+93.35+257.95+171.9+9+141</p>]]></content>
     
@@ -38,7 +38,7 @@
     
     <category term="3D打印" scheme="http://example.com/tags/3D%E6%89%93%E5%8D%B0/"/>
     
-    <category term="PostironJM" scheme="http://example.com/tags/PostironJM/"/>
+    <category term="PositronJM" scheme="http://example.com/tags/PositronJM/"/>
     
   </entry>
   
