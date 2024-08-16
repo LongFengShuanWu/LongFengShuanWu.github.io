@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-08-15T06:34:54.113Z</updated>
+  <updated>2024-08-16T03:44:25.988Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>PositronJMBom表</title>
-    <link href="http://example.com/2024/08/11/PositronJMBom%E8%A1%A8/"/>
-    <id>http://example.com/2024/08/11/PositronJMBom%E8%A1%A8/</id>
+    <link href="http://example.com/2024/08/11/PositronJMBom/"/>
+    <id>http://example.com/2024/08/11/PositronJMBom/</id>
     <published>2024-08-11T07:37:42.000Z</published>
-    <updated>2024-08-15T06:34:54.113Z</updated>
+    <updated>2024-08-16T03:44:25.988Z</updated>
     
     <content type="html"><![CDATA[<h1 id="官方仓库地址："><a href="#官方仓库地址：" class="headerlink" title="官方仓库地址："></a>官方仓库地址：</h1><p><a href="https://github.com/mcfazio2001/JourneyMaker-Positron">https://github.com/mcfazio2001/JourneyMaker-Positron</a></p><h1 id="Bom表（数量可能有错）"><a href="#Bom表（数量可能有错）" class="headerlink" title="Bom表（数量可能有错）"></a>Bom表（数量可能有错）</h1><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>打印件</p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><p>电气件</p><ul><li>6*20热端加热棒</li><li>NTC100K玻封电阻</li><li>IR传感器</li><li>3010风扇</li><li>必趣SKRpico</li><li>树莓派zero2W</li><li>明纬EPP-200-24</li><li>8字孔插座（AC-027）</li><li>8字孔对应的插头</li><li>2510风扇*2个</li><li>4220电机*3个</li><li>5015涡轮</li><li>玻璃热床（找黑心商家买）</li></ul><h2 id="-2"><a href="#-2" class="headerlink" title=""></a></h2><p>挤出机</p><ul><li>HGX挤出机套件</li><li>气动接头和铁氟龙管</li><li>36电机</li></ul><h2 id="-3"><a href="#-3" class="headerlink" title=""></a></h2><p>机加工件</p><ul><li>热端套件（找黑心商家买）</li><li>热床架</li><li>Z轴用3010铝型材250mm</li><li>底板</li><li>XY-Spacer（XY的连接支架）</li><li>z-axis_Rail_Block V2.2（Z轴的连接支架）</li></ul><h2 id="-4"><a href="#-4" class="headerlink" title=""></a></h2><p>硬件</p><ul><li>无头内六角螺丝&#x2F;机丝(M3*6 )*2个</li><li>T5消隙螺母和丝杆225MM（间距1导程4）</li><li>六角螺母（M3 *2.4）*5个</li><li>GT2 20T同步轮（两面平的那种，缸径5）*4个</li><li>MF73ZZ轴承*28个</li><li>平垫片(M3 <em>7</em> 0.2)*8个</li><li>扁平头内六角螺丝（M3 *10)* 29个</li><li>MR117ZZ轴承* 10个</li><li>平垫片(M7 <em>13</em> 0.2)* 40个</li><li>土八字热熔螺母（M3,外径4.5，长5）* 32个</li><li>杯头内六角螺丝（M3 *20）* 10个</li><li>扁平头内六角螺丝（M3 *18)* 3个</li><li>扁平头内六角螺丝（M3 *14)* 15个</li><li>平头内六角螺丝（M3 *8)* 16个</li><li>平头内六角螺丝（M3*14)*5个</li><li>F5-10M轴承* 2个</li><li>MF85ZZ轴承* 2个</li><li>手拧螺母（M6* 16）</li><li>MR115轴承*5个</li><li>GB120内螺纹圆柱形销（M3外径4长12）* 2</li><li>欧标2020型材用T型螺母（M3）* 4</li><li>杯头螺丝（M3 *8）* 4个</li><li>手拧螺母（M6* 25）</li><li>M4六角螺母* 6个</li><li>平头螺丝（M4* 25）</li><li>平头螺丝（M4 *12）* 5个</li><li>平垫片（M5 *10* 0.8）1个</li><li>平头螺丝（M3 *12）* 4个</li><li>平头螺丝（M3*18）* 4个</li><li>土八字热熔螺母（M6,外径8，长6）*32个</li><li>平头螺丝（M3*16）* 2个</li><li>平头螺丝（M3 *20）* 2个</li><li>GT2 16T惰轮(宽6缸径3不带齿)</li><li>硅胶防滑贴（圆形，8*2mm）</li><li>扁平头内六角螺丝（M3*30)* 6个</li><li>3*4圆头螺丝</li></ul><h2 id="-5"><a href="#-5" class="headerlink" title=""></a></h2><p>运动件</p><ul><li>MGW9C_Z-axis_Rail 250mm</li><li>MGN9_X-axis_Rail 250mm</li><li>MGN12C_Y-axis_Rail 250mm</li><li>GT2 3mm同步带 1.9m</li><li>GT2 6mm闭口同步带 192mm</li></ul><hr><p>参考价格<br>896.65+11+135.52+93.35+257.95+171.9+9+141</p>]]></content>
     
@@ -44,8 +44,8 @@
   
   <entry>
     <title>抖音新媒体笔记3</title>
-    <link href="http://example.com/2024/06/03/%E6%8A%96%E9%9F%B3%E6%96%B0%E5%AA%92%E4%BD%93%E7%AC%94%E8%AE%B03/"/>
-    <id>http://example.com/2024/06/03/%E6%8A%96%E9%9F%B3%E6%96%B0%E5%AA%92%E4%BD%93%E7%AC%94%E8%AE%B03/</id>
+    <link href="http://example.com/2024/06/03/tiktok3/"/>
+    <id>http://example.com/2024/06/03/tiktok3/</id>
     <published>2024-06-02T17:37:01.000Z</published>
     <updated>2024-07-04T10:09:46.103Z</updated>
     
@@ -71,8 +71,8 @@
   
   <entry>
     <title>抖音新媒体笔记2</title>
-    <link href="http://example.com/2024/06/01/%E6%8A%96%E9%9F%B3%E6%96%B0%E5%AA%92%E4%BD%93%E7%AC%94%E8%AE%B02/"/>
-    <id>http://example.com/2024/06/01/%E6%8A%96%E9%9F%B3%E6%96%B0%E5%AA%92%E4%BD%93%E7%AC%94%E8%AE%B02/</id>
+    <link href="http://example.com/2024/06/01/tiktok2/"/>
+    <id>http://example.com/2024/06/01/tiktok2/</id>
     <published>2024-06-01T13:43:55.000Z</published>
     <updated>2024-07-23T13:33:42.922Z</updated>
     
@@ -98,8 +98,8 @@
   
   <entry>
     <title>抖音新媒体笔记</title>
-    <link href="http://example.com/2024/05/31/%E6%8A%96%E9%9F%B3%E6%96%B0%E5%AA%92%E4%BD%93%E7%AC%94%E8%AE%B01/"/>
-    <id>http://example.com/2024/05/31/%E6%8A%96%E9%9F%B3%E6%96%B0%E5%AA%92%E4%BD%93%E7%AC%94%E8%AE%B01/</id>
+    <link href="http://example.com/2024/05/31/tiktok1/"/>
+    <id>http://example.com/2024/05/31/tiktok1/</id>
     <published>2024-05-31T14:34:33.000Z</published>
     <updated>2024-07-04T10:09:48.497Z</updated>
     
@@ -125,8 +125,8 @@
   
   <entry>
     <title>SKRpico下位机固件刷写</title>
-    <link href="http://example.com/2024/04/28/SKRpico%E4%B8%8B%E4%BD%8D%E6%9C%BA%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%86%99/"/>
-    <id>http://example.com/2024/04/28/SKRpico%E4%B8%8B%E4%BD%8D%E6%9C%BA%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%86%99/</id>
+    <link href="http://example.com/2024/04/28/SKRpico/"/>
+    <id>http://example.com/2024/04/28/SKRpico/</id>
     <published>2024-04-28T12:08:23.000Z</published>
     <updated>2024-04-28T12:25:58.575Z</updated>
     
@@ -149,8 +149,8 @@
   
   <entry>
     <title>树莓派上位机刷写先前准备</title>
-    <link href="http://example.com/2024/04/28/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E4%BD%8D%E6%9C%BA%E5%88%B7%E5%86%99%E5%85%88%E5%89%8D%E5%87%86%E5%A4%87/"/>
-    <id>http://example.com/2024/04/28/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E4%BD%8D%E6%9C%BA%E5%88%B7%E5%86%99%E5%85%88%E5%89%8D%E5%87%86%E5%A4%87/</id>
+    <link href="http://example.com/2024/04/28/respberryPi-positronJM/"/>
+    <id>http://example.com/2024/04/28/respberryPi-positronJM/</id>
     <published>2024-04-28T09:47:44.000Z</published>
     <updated>2024-04-28T12:27:07.711Z</updated>
     
@@ -177,8 +177,8 @@
   
   <entry>
     <title>记一次树莓派乌龙</title>
-    <link href="http://example.com/2024/04/27/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B9%8C%E9%BE%99/"/>
-    <id>http://example.com/2024/04/27/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B9%8C%E9%BE%99/</id>
+    <link href="http://example.com/2024/04/27/respberryPi2W-power/"/>
+    <id>http://example.com/2024/04/27/respberryPi2W-power/</id>
     <published>2024-04-27T15:44:04.000Z</published>
     <updated>2024-04-28T12:25:58.577Z</updated>
     
@@ -203,8 +203,8 @@
   
   <entry>
     <title>关于简历中熟练度的形容词汇</title>
-    <link href="http://example.com/2024/04/25/%E5%85%B3%E4%BA%8E%E7%AE%80%E5%8E%86%E4%B8%AD%E7%86%9F%E7%BB%83%E5%BA%A6%E7%9A%84%E5%BD%A2%E5%AE%B9%E8%AF%8D%E6%B1%87/"/>
-    <id>http://example.com/2024/04/25/%E5%85%B3%E4%BA%8E%E7%AE%80%E5%8E%86%E4%B8%AD%E7%86%9F%E7%BB%83%E5%BA%A6%E7%9A%84%E5%BD%A2%E5%AE%B9%E8%AF%8D%E6%B1%87/</id>
+    <link href="http://example.com/2024/04/25/cv/"/>
+    <id>http://example.com/2024/04/25/cv/</id>
     <published>2024-04-25T06:29:24.000Z</published>
     <updated>2024-04-25T06:37:49.577Z</updated>
     
@@ -230,8 +230,8 @@
   
   <entry>
     <title>Voron2.4构建心得</title>
-    <link href="http://example.com/2024/03/30/Voron2.4%E6%9E%84%E5%BB%BA%E5%BF%83%E5%BE%97/"/>
-    <id>http://example.com/2024/03/30/Voron2.4%E6%9E%84%E5%BB%BA%E5%BF%83%E5%BE%97/</id>
+    <link href="http://example.com/2024/03/30/Voron2.4build/"/>
+    <id>http://example.com/2024/03/30/Voron2.4build/</id>
     <published>2024-03-30T11:26:41.000Z</published>
     <updated>2024-03-30T14:30:00.330Z</updated>
     
@@ -256,8 +256,8 @@
   
   <entry>
     <title>voron0.2r1配置踩坑</title>
-    <link href="http://example.com/2024/03/01/voron0.2r1%E9%85%8D%E7%BD%AE%E8%B8%A9%E5%9D%91/"/>
-    <id>http://example.com/2024/03/01/voron0.2r1%E9%85%8D%E7%BD%AE%E8%B8%A9%E5%9D%91/</id>
+    <link href="http://example.com/2024/03/01/voron0.2r1build/"/>
+    <id>http://example.com/2024/03/01/voron0.2r1build/</id>
     <published>2024-03-01T07:52:57.000Z</published>
     <updated>2024-03-01T07:54:36.083Z</updated>
     
@@ -280,8 +280,8 @@
   
   <entry>
     <title>CloudeFlare修改301重定向心得</title>
-    <link href="http://example.com/2024/01/15/CloudeFlare%E4%BF%AE%E6%94%B9301%E9%87%8D%E5%AE%9A%E5%90%91%E5%BF%83%E5%BE%97/"/>
-    <id>http://example.com/2024/01/15/CloudeFlare%E4%BF%AE%E6%94%B9301%E9%87%8D%E5%AE%9A%E5%90%91%E5%BF%83%E5%BE%97/</id>
+    <link href="http://example.com/2024/01/15/CloudeFlare301/"/>
+    <id>http://example.com/2024/01/15/CloudeFlare301/</id>
     <published>2024-01-15T15:30:46.000Z</published>
     <updated>2024-02-27T14:08:43.261Z</updated>
     
@@ -305,8 +305,8 @@
   
   <entry>
     <title>计算机组成原理部分知识点</title>
-    <link href="http://example.com/2024/01/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E9%83%A8%E5%88%86%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-    <id>http://example.com/2024/01/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E9%83%A8%E5%88%86%E7%9F%A5%E8%AF%86%E7%82%B9/</id>
+    <link href="http://example.com/2024/01/09/Principles%20of%20Computer%20Composition/"/>
+    <id>http://example.com/2024/01/09/Principles%20of%20Computer%20Composition/</id>
     <published>2024-01-09T14:07:25.000Z</published>
     <updated>2024-01-09T14:24:08.684Z</updated>
     
@@ -329,8 +329,8 @@
   
   <entry>
     <title>hexo导航页配置</title>
-    <link href="http://example.com/2023/11/24/hexo%E5%AF%BC%E8%88%AA%E9%A1%B5%E9%85%8D%E7%BD%AE/"/>
-    <id>http://example.com/2023/11/24/hexo%E5%AF%BC%E8%88%AA%E9%A1%B5%E9%85%8D%E7%BD%AE/</id>
+    <link href="http://example.com/2023/11/24/hexo/"/>
+    <id>http://example.com/2023/11/24/hexo/</id>
     <published>2023-11-24T06:29:29.000Z</published>
     <updated>2023-11-24T06:42:57.037Z</updated>
     
@@ -354,8 +354,8 @@
   
   <entry>
     <title>20.网络自动化编程</title>
-    <link href="http://example.com/2023/11/20/21.%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E7%BC%96%E7%A8%8B/"/>
-    <id>http://example.com/2023/11/20/21.%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E7%BC%96%E7%A8%8B/</id>
+    <link href="http://example.com/2023/11/20/21.WLAN-Auto/"/>
+    <id>http://example.com/2023/11/20/21.WLAN-Auto/</id>
     <published>2023-11-20T07:00:10.000Z</published>
     <updated>2023-11-24T07:18:22.673Z</updated>
     
@@ -378,8 +378,8 @@
   
   <entry>
     <title>19.PPPoE笔记</title>
-    <link href="http://example.com/2023/11/19/20.PPPoE%E7%AC%94%E8%AE%B0/"/>
-    <id>http://example.com/2023/11/19/20.PPPoE%E7%AC%94%E8%AE%B0/</id>
+    <link href="http://example.com/2023/11/19/20.PPPoE/"/>
+    <id>http://example.com/2023/11/19/20.PPPoE/</id>
     <published>2023-11-19T07:00:10.000Z</published>
     <updated>2023-11-24T07:18:36.056Z</updated>
     
@@ -402,8 +402,8 @@
   
   <entry>
     <title>18.PPP配置命令</title>
-    <link href="http://example.com/2023/11/18/19.PPP%E9%85%8D%E7%BD%AE%E5%91%BD%E4%BB%A4/"/>
-    <id>http://example.com/2023/11/18/19.PPP%E9%85%8D%E7%BD%AE%E5%91%BD%E4%BB%A4/</id>
+    <link href="http://example.com/2023/11/18/19.PPP/"/>
+    <id>http://example.com/2023/11/18/19.PPP/</id>
     <published>2023-11-18T07:00:10.000Z</published>
     <updated>2023-11-24T07:18:46.276Z</updated>
     
@@ -451,8 +451,8 @@
   
   <entry>
     <title>16.高级ACL</title>
-    <link href="http://example.com/2023/11/16/17.%E9%AB%98%E7%BA%A7ACL/"/>
-    <id>http://example.com/2023/11/16/17.%E9%AB%98%E7%BA%A7ACL/</id>
+    <link href="http://example.com/2023/11/16/17.Datacom/"/>
+    <id>http://example.com/2023/11/16/17.Datacom/</id>
     <published>2023-11-16T07:00:10.000Z</published>
     <updated>2023-11-24T08:35:27.325Z</updated>
     
@@ -477,8 +477,8 @@
   
   <entry>
     <title>15.ACL基础</title>
-    <link href="http://example.com/2023/11/15/16.ACL%E5%9F%BA%E7%A1%80/"/>
-    <id>http://example.com/2023/11/15/16.ACL%E5%9F%BA%E7%A1%80/</id>
+    <link href="http://example.com/2023/11/15/16.ACL/"/>
+    <id>http://example.com/2023/11/15/16.ACL/</id>
     <published>2023-11-15T07:00:10.000Z</published>
     <updated>2023-11-24T07:19:35.857Z</updated>
     
@@ -502,8 +502,8 @@
   
   <entry>
     <title>14.WLAN基础</title>
-    <link href="http://example.com/2023/11/14/15.WLAN%E5%9F%BA%E7%A1%80/"/>
-    <id>http://example.com/2023/11/14/15.WLAN%E5%9F%BA%E7%A1%80/</id>
+    <link href="http://example.com/2023/11/14/15.WLAN/"/>
+    <id>http://example.com/2023/11/14/15.WLAN/</id>
     <published>2023-11-14T07:00:10.000Z</published>
     <updated>2023-11-24T07:19:44.462Z</updated>
     
