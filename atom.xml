@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-08-21T08:10:59.329Z</updated>
+  <updated>2024-09-08T07:15:34.968Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>悲报：论数据备份的重要性</title>
+    <link href="http://example.com/2024/09/08/wuwuwuwu/"/>
+    <id>http://example.com/2024/09/08/wuwuwuwu/</id>
+    <published>2024-09-08T06:40:39.000Z</published>
+    <updated>2024-09-08T07:15:34.968Z</updated>
+    
+    <content type="html"><![CDATA[<p>2024年9月5日，本人于8月25日购买的三星T7硬盘，带着我为了重装系捅而拷出来的，本人大学三年的数据（截止目前本人大四），就这么华丽丽的报销了。<br>周末问了几家数据恢复公司，都说恢复的意义不大，哎。<br>只能安慰自己里面没什么重要的东西吗。<br>大学作业能从该死的超星学习通找回，损失的虚拟机以后用处也不大。一部分资料可以从百度网盘找回。最大的损失应该是一些出游的视频吧，还有一些疫情的交作业录像。<br>也只能这么安慰自己了。痛失接近一个T的数据。<br>连恢复中心的人都说，这概率太小了。新盘，卡在我重装系统的骨节眼上没数据备份。多小的概率啊。<br>只能说数据备份这块不能忽视。数据无价，炸了真是太痛苦了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;2024年9月5日，本人于8月25日购买的三星T7硬盘，带着我为了重装系捅而拷出来的，本人大学三年的数据（截止目前本人大四），就这么华丽丽的报销了。&lt;br&gt;周末问了几家数据恢复公司，都说恢复的意义不大，哎。&lt;br&gt;只能安慰自己里面没什么重要的东西吗。&lt;br&gt;大学作业能从该死</summary>
+      
+    
+    
+    
+    <category term="心得分享" scheme="http://example.com/categories/%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="吸取教训" scheme="http://example.com/tags/%E5%90%B8%E5%8F%96%E6%95%99%E8%AE%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>保险分红产品优势</title>
@@ -489,32 +513,6 @@
       
       
     <summary type="html">&lt;h1 id=&quot;网络地址转换（NAT）&quot;&gt;&lt;a href=&quot;#网络地址转换（NAT）&quot; class=&quot;headerlink&quot; title=&quot;网络地址转换（NAT）&quot;&gt;&lt;/a&gt;网络地址转换（NAT）&lt;/h1&gt;&lt;p&gt;作用：实现私网和公网的地址转换，实现私网和公网互访，提升公网地址的利</summary>
-      
-    
-    
-    
-    <category term="技术记录" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="路由交换基础" scheme="http://example.com/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>16.高级ACL</title>
-    <link href="http://example.com/2023/11/16/17.Datacom/"/>
-    <id>http://example.com/2023/11/16/17.Datacom/</id>
-    <published>2023-11-16T07:00:10.000Z</published>
-    <updated>2023-11-24T08:35:27.325Z</updated>
-    
-    <content type="html"><![CDATA[<p>基础ACL：匹配信息（源 IP 地址）<br>高级ACL：匹配信息（五元组：源 IP、目的 IP、源端口、目的端口、协议号）控制更加灵活</p><hr><h1 id="基础ACL的不足："><a href="#基础ACL的不足：" class="headerlink" title="基础ACL的不足："></a>基础ACL的不足：</h1><ol><li>只能针对源 IP 地址进行过滤，当源设备和目的设备的地址不一，且数量多的时候无法使用基础 ACL 进行控制</li><li>无法针对协议进行过滤（如：UDP、TCP、OSPF 等协议）</li></ol><h1 id="高级-ACL-配置"><a href="#高级-ACL-配置" class="headerlink" title="高级 ACL 配置"></a>高级 ACL 配置</h1><ol><li>创建 ACL<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">acl 3000  // 创建 ACL（3000—3999 为高级 ACL）<br></code></pre></td></tr></table></figure></li><li>命名规则 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">rule 5 deny ip source 192.168.1.1 0 destination 172.16.1.200 0<br>// 代表过滤的是 IP 流量，并且必须同时满足源地址为 192.168.1.1 和目的地址为 172.16.1.200 才会被过滤<br><br>rule 10 deny udp source 192.168.1.2 0 destination 172.16.1.200 0<br>// 代表过滤的流量为 UDP 流量，并且同时满足源 IP 地址为：192.168.1.2 0 目的地址为 172.16.1.200 才会被过滤<br><br>rule 15 deny icmp source 1.1.1.1 0 destination 2.2.2.2 0<br>// 代表过滤的为 ICMP 协议流量，不允许源为 1.1.1.1 且目的为 2.2.2.2 的 ICMP 流量通过<br></code></pre></td></tr></table></figure></li><li>调用<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">interface G0/0/X（需要判断接口的方向）<br>traffic-filter  inbound 或 outbound acl 3000<br></code></pre></td></tr></table></figure></li></ol><ul><li>补充：高级 ACL 也能结合时间使用<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">time-range A 09:00 to 18:00 working-day<br>// 例如：添加时间 A 为工作日 9点到下午6点生效<br></code></pre></td></tr></table></figure></li><li>补充到 ACL 中<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">rule 15 deny icmp source 1.1.1.1 0 destination 2.2.2.2 0  time-range A<br>// 可以使得命令在有时间段中生效<br></code></pre></td></tr></table></figure></li></ul><p><code>display this</code> 可以查看 time-range A 的配置（系统配置视图）<br><code>display acl all </code>可以查看 ACL 规则是否在生效时间段内</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;基础ACL：匹配信息（源 IP 地址）&lt;br&gt;高级ACL：匹配信息（五元组：源 IP、目的 IP、源端口、目的端口、协议号）控制更加灵活&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;基础ACL的不足：&quot;&gt;&lt;a href=&quot;#基础ACL的不足：&quot; class=&quot;headerlink&quot; </summary>
       
     
     
