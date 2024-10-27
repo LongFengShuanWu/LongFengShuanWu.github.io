@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-09-08T07:15:34.968Z</updated>
+  <updated>2024-10-27T08:55:42.452Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>把Hexo迁移到新电脑</title>
+    <link href="http://example.com/2024/10/27/HexoGoToNewComputer/"/>
+    <id>http://example.com/2024/10/27/HexoGoToNewComputer/</id>
+    <published>2024-10-27T08:52:10.000Z</published>
+    <updated>2024-10-27T08:55:42.452Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="力大砖飞"><a href="#力大砖飞" class="headerlink" title="力大砖飞"></a>力大砖飞</h1><p>新电脑按照官网文档安装hexo：<a href="https://hexo.io/zh-cn/docs/">文档 | Hexo</a><br>然后直接把文件夹拷到新电脑。然后 <code> npm install</code>安装缺失插件<br>给github配置ssh密钥<a href="https://help.gitee.com/base/account/SSH%E5%85%AC%E9%92%A5%E8%AE%BE%E7%BD%AE">SSH 公钥设置 | Gitee 帮助中心</a><br>搞定</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;力大砖飞&quot;&gt;&lt;a href=&quot;#力大砖飞&quot; class=&quot;headerlink&quot; title=&quot;力大砖飞&quot;&gt;&lt;/a&gt;力大砖飞&lt;/h1&gt;&lt;p&gt;新电脑按照官网文档安装hexo：&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot;&gt;文档 | Hex</summary>
+      
+    
+    
+    
+    <category term="技术记录" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Hexo迁移" scheme="http://example.com/tags/Hexo%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>悲报：论数据备份的重要性</title>
@@ -489,30 +513,6 @@
       
     <summary type="html">&lt;h1 id=&quot;认证方（ISP-侧）&quot;&gt;&lt;a href=&quot;#认证方（ISP-侧）&quot; class=&quot;headerlink&quot; title=&quot;认证方（ISP 侧）&quot;&gt;&lt;/a&gt;认证方（ISP 侧）&lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;AAA 创建本地用户&lt;figure class=&quot;highlig</summary>
-      
-    
-    
-    
-    <category term="技术记录" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="路由交换基础" scheme="http://example.com/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>17.NAT</title>
-    <link href="http://example.com/2023/11/17/18.NAT/"/>
-    <id>http://example.com/2023/11/17/18.NAT/</id>
-    <published>2023-11-17T07:00:10.000Z</published>
-    <updated>2023-11-24T07:18:53.387Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="网络地址转换（NAT）"><a href="#网络地址转换（NAT）" class="headerlink" title="网络地址转换（NAT）"></a>网络地址转换（NAT）</h1><p>作用：实现私网和公网的地址转换，实现私网和公网互访，提升公网地址的利用率</p><h2 id="源-NAT（把数据包的-源-IP-地址-进行转换）"><a href="#源-NAT（把数据包的-源-IP-地址-进行转换）" class="headerlink" title="源 NAT（把数据包的  源 IP 地址  进行转换）"></a>源 NAT（把数据包的  源 IP 地址  进行转换）</h2><ol><li><p>静态 NAT：实现固定的 1:1 转换（1 个私网地址转换为 1 个公网地址）</p><ul><li>优点：实现私网与公网的互访</li><li>缺点：无法缓解公网地址不足的问题，需要 1:1 转换</li></ul></li><li><p>动态 NAT：实现灵活的 1:1 转换（1 个私网地址转换为 1 个公网地址）</p><ul><li>优点：实现私网与公网的互访，并且私网与公网地址并非固定，可以灵活匹配</li><li>缺点：只能实现 1:1 的转换，公网地址被占用时，新用户无法进行转换</li></ul></li><li><p>NAPT：可以实现 N:1 的转换（N 个私网地址转换为 1 个公网地址，实现公网地址的复用）</p><ul><li>为了区分不同的私网地址，NAPT 通过转换协议号或 TCP、UDP 的端口号来区分私网设备</li><li>优点：实现私网与公网的互访，灵活匹配及多对一转换</li><li>缺点：至少需要 2 个公网地址，一个出口路由器用于通信的公网 IP 地址，一个是 NAT 地址池的公网 IP 地址</li></ul></li><li><p>Easy IP：可以实现 N:1 的转换（N 个私网地址转换为 1 个公网地址，实现公网地址的复用）</p><ul><li>与 NAPT 一样可以转换端口号，并且无需使用 NAT 地址池，直接使用出口路由器的接口 IP 地址即可完成转换</li><li>优点：进一步减少了公网地址的浪费</li></ul></li></ol><h2 id="目的-NAT（把数据包的-目的-IP-地址-进行转换）"><a href="#目的-NAT（把数据包的-目的-IP-地址-进行转换）" class="headerlink" title="目的 NAT（把数据包的  目的 IP 地址  进行转换）"></a>目的 NAT（把数据包的  目的 IP 地址  进行转换）</h2><ul><li>NAT Server：可以 1：1 的实现公网地址转换为私网地址，常用于公司内部服务器是私网的，为公网用户提供服务</li></ul><h1 id="配置命令："><a href="#配置命令：" class="headerlink" title="配置命令："></a>配置命令：</h1><h4 id="1-NAPT-配置"><a href="#1-NAPT-配置" class="headerlink" title="1. NAPT 配置"></a>1. NAPT 配置</h4><ol><li>创建 NAT 地址池<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">nat address-group 1 100.1.1.10  100.1.1.10// 地址池为：100.1.1.10 — 100.1.1.10 代表只有 1 个公网地址<br>   注意：地址池 IP 必须与出口路由器接口的 IP 地址相同网段（且是未被使用的地址）<br></code></pre></td></tr></table></figure></li><li>创建 ACL<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">acl 2000<br>rule permit source  192.168.1.0  0.0.0.255// 匹配需要进行 NAT 转换的流量<br></code></pre></td></tr></table></figure></li><li>接口调用<br>进入出口路由器，公网侧的接口<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">interface  G0/0/X<br>nat outbound  2000  address-group 1 // 代表该接口发出的 192.168.1.0/24 网段流量，转换为 100.1.1.10<br></code></pre></td></tr></table></figure></li></ol><h4 id="2-Easy-IP-配置"><a href="#2-Easy-IP-配置" class="headerlink" title="2. Easy IP 配置"></a>2. Easy IP 配置</h4><ol><li><p>创建 ACL</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">acl 2000<br>rule permit source  192.168.1.0  0.0.0.255// 匹配需要进行 NAT 转换的流量<br></code></pre></td></tr></table></figure></li><li><p>接口调用<br>进入出口路由器，公网侧的接口</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">interface  G0/0/X<br>nat outbound  2000 // 代表该接口发出的 192.168.1.0/24 网段流量，转换为接口 G0/0/X 地址<br></code></pre></td></tr></table></figure></li><li><p>NAT Server 配置</p></li><li><p>进入接口调用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">interface G0/0/X// 进入出口路由器的公网侧接口<br>nat server global 100.1.1.200 inside 192.168.1.2// 把公网地址  100.1.1.200 转换为私网的  192.168.1.2<br>当公网用户访问 100.1.1.200 时，设备收到会转换为私有服务器的 IP 地址<br></code></pre></td></tr></table></figure></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;网络地址转换（NAT）&quot;&gt;&lt;a href=&quot;#网络地址转换（NAT）&quot; class=&quot;headerlink&quot; title=&quot;网络地址转换（NAT）&quot;&gt;&lt;/a&gt;网络地址转换（NAT）&lt;/h1&gt;&lt;p&gt;作用：实现私网和公网的地址转换，实现私网和公网互访，提升公网地址的利</summary>
       
     
     
