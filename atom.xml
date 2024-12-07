@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-12-07T09:46:10.199Z</updated>
+  <updated>2024-12-07T09:51:02.154Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PositronJM物料采购指南</title>
+    <link href="http://example.com/2024/12/07/PositronJM_HowToBuy/"/>
+    <id>http://example.com/2024/12/07/PositronJM_HowToBuy/</id>
+    <published>2024-12-07T09:50:51.000Z</published>
+    <updated>2024-12-07T09:51:02.154Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h1><p>PositronJM（JourneyMaker-Positron）3D打印机是PositronV3系列的一个衍生版本，相对于原版V3和LT版本，JM的版本物料采购和装配相对简单。</p><h1 id="物料分类"><a href="#物料分类" class="headerlink" title="物料分类"></a>物料分类</h1><p>从采购难度分类有通用件和定制件<br>先讲最麻烦的喷头和热床<br>这两样东西速卖通有卖，然后问了下店家某宝链接<br>找这家店：咕噜咕噜百宝箱，直接问客服positronLT&#x2F;v3的喷头和热床<br>客服会给报价，价格看脸。</p><p>三轴的滑轨，我是直接找林邓的淘宝店定制的</p><p>底板、Z轴架、XY轴架、热床架、3010铝型材的铝坨坨们：我是找嘉立创CNC&#x2F;钣金&#x2F;FA商城定制的，质量不予评价，反正能用。</p><p>4220电机，这个有点麻烦，没钱定制的话只能自己锯了。</p><p>其他淘宝都能买到<br>注意GT2皮带是3mm的，淘宝店铺POWGE保捷传动有卖(甚至有低粉尘的)<br>IR传感器B站工房和淘宝都有卖。</p><p>注意螺丝头，这里面有平头好人扁平头两种，注意不要搞混。</p><p>剩下的基本没啥坑了。照着物料表名字买就行了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;简介：&quot;&gt;&lt;a href=&quot;#简介：&quot; class=&quot;headerlink&quot; title=&quot;简介：&quot;&gt;&lt;/a&gt;简介：&lt;/h1&gt;&lt;p&gt;PositronJM（JourneyMaker-Positron）3D打印机是PositronV3系列的一个衍生版本，相对于原版V3</summary>
+      
+    
+    
+    
+    <category term="技术记录" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="3D打印" scheme="http://example.com/tags/3D%E6%89%93%E5%8D%B0/"/>
+    
+    <category term="PostironJM" scheme="http://example.com/tags/PostironJM/"/>
+    
+  </entry>
   
   <entry>
     <title>Positron_JM复刻</title>
@@ -498,30 +524,6 @@
     
     
     <category term="日常记录" scheme="http://example.com/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20.网络自动化编程</title>
-    <link href="http://example.com/2023/11/20/21.WLAN-Auto/"/>
-    <id>http://example.com/2023/11/20/21.WLAN-Auto/</id>
-    <published>2023-11-20T07:00:10.000Z</published>
-    <updated>2023-11-24T07:18:22.673Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs python">telnetlib 登录方式<br><br><span class="hljs-keyword">import</span> telnetlib<span class="hljs-comment"># 调用模块（telnetlib）</span><br><span class="hljs-keyword">import</span> time<br><br>password = <span class="hljs-string">&#x27;Huawei@123&#x27;</span><br>username = <span class="hljs-string">&#x27;huawei&#x27;</span><br><br>tn = telnetlib.Telnet(<span class="hljs-string">&#x27;192.168.56.100&#x27;</span>,<span class="hljs-number">3000</span>)<span class="hljs-comment"># 输入登录的设备 IP 和端口号（如果是默认端口，则无添加 3000）</span><br><br><br><br>tn.read_until(<span class="hljs-string">b&#x27;Username:&#x27;</span>)<span class="hljs-comment"># 登录设备，读取到 Username 时</span><br>tn.write(username.encode(<span class="hljs-string">&#x27;ascii&#x27;</span>) + <span class="hljs-string">b&#x27;\n&#x27;</span>)<span class="hljs-comment"># 执行写操作，写入 huawei</span><br><br>tn.read_until(<span class="hljs-string">b&#x27;Password:&#x27;</span>)<span class="hljs-comment"># 读取到 Password 时</span><br>tn.write(password.encode(<span class="hljs-string">&#x27;ascii&#x27;</span>) + <span class="hljs-string">b&#x27;\n&#x27;</span>)<span class="hljs-comment"># 写入密码 Huawei@123</span><br><br>tn.read_until(<span class="hljs-string">b&#x27;&lt;LSW1&gt;&#x27;</span>)<br>tn.write(<span class="hljs-string">&#x27;sys&#x27;</span>.encode(<span class="hljs-string">&#x27;ascii&#x27;</span>) + <span class="hljs-string">b&#x27;\n&#x27;</span>)<br><br>tn.read_until(<span class="hljs-string">b&#x27;[LSW1]&#x27;</span>)<br>tn.write(<span class="hljs-string">&#x27;vlan 10&#x27;</span>.encode(<span class="hljs-string">&#x27;ascii&#x27;</span>) + <span class="hljs-string">b&#x27;\n&#x27;</span>)<span class="hljs-comment"># 进入设备系统配置视图，并且创建 VLAN 10</span><br><br>tn.read_until(<span class="hljs-string">b&#x27;[LSW1-vlan10]&#x27;</span>)<br>tn.write(<span class="hljs-string">&#x27;display vlan&#x27;</span>.encode(<span class="hljs-string">&#x27;ascii&#x27;</span>) + <span class="hljs-string">b&#x27;\n&#x27;</span>)<br><br>conf = tn.read_until(<span class="hljs-string">b&#x27;[LSW1-vlan10]&#x27;</span>).decode(<span class="hljs-string">&quot;ascii&quot;</span>)<span class="hljs-comment"># 打印 vlan 信息</span><br><span class="hljs-built_in">print</span>(conf)<br><br>time.sleep(<span class="hljs-number">1</span>)<br>tn.close()<span class="hljs-comment"># 关闭  telnetlib</span><br></code></pre></td></tr></table></figure><hr><h1 id="交换设备配置"><a href="#交换设备配置" class="headerlink" title="交换设备配置"></a>交换设备配置</h1><h3 id="1-创建用户"><a href="#1-创建用户" class="headerlink" title="1. 创建用户"></a>1. 创建用户</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">aaa<br>local-user huawei password cipher Huawei<br>local-user huawei privilege level 15<br>local-user huawei service-type telnet// 指定服务类型，以及修改用户等级（3 及以上的等级）<br></code></pre></td></tr></table></figure><h3 id="2-指定用户的接入方式和认证模式"><a href="#2-指定用户的接入方式和认证模式" class="headerlink" title="2. 指定用户的接入方式和认证模式"></a>2. 指定用户的接入方式和认证模式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">user-interface vty 0 4<br>authentication-mode aaa<br>protocol inbound all// 进入 VTY 接口，修改认证模式，和接入协议<br></code></pre></td></tr></table></figure><h3 id="3-（可选）"><a href="#3-（可选）" class="headerlink" title="3. （可选）"></a>3. （可选）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">telnet server port   3000// 修改设备端口号<br></code></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Python代码&quot;&gt;&lt;a href=&quot;#Python代码&quot; class=&quot;headerlink&quot; title=&quot;Python代码&quot;&gt;&lt;/a&gt;Python代码&lt;/h2&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td c</summary>
-      
-    
-    
-    
-    <category term="技术记录" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="路由交换基础" scheme="http://example.com/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
