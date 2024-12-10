@@ -1,3 +1,6 @@
+http://example.com/2024/12/10/ShantouHowToNow/
+http://example.com/2024/12/10/XXX_Out/
+http://example.com/2024/12/10/Internet6Word/
 http://example.com/2024/12/07/Voron2.4r1Bom/
 http://example.com/2024/12/07/PositronJM_HowToBuy/
 http://example.com/2024/12/07/Positron_JM_making/
@@ -68,7 +71,9 @@ http://example.com/tags/%E5%A5%BD%E7%89%A9%E7%A0%94%E7%A9%B6/
 http://example.com/tags/%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/
 http://example.com/tags/%E6%96%B0%E5%AA%92%E4%BD%93/
 http://example.com/tags/%E5%90%B8%E5%8F%96%E6%95%99%E8%AE%AD/
+http://example.com/tags/%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AD%E5%AD%97%E7%BB%8F/
 http://example.com/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/
 http://example.com/categories/%E7%AC%94%E8%AE%B0/
 http://example.com/categories/%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/
 http://example.com/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/
+http://example.com/categories/%E5%86%85%E5%AE%B9%E5%88%86%E4%BA%AB/
