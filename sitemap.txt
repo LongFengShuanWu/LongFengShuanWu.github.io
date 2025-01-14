@@ -1,3 +1,4 @@
+http://example.com/about/index.html
 http://example.com/2024/12/10/HTCarKillPeople/
 http://example.com/2024/12/10/ShantouHowToNow/
 http://example.com/2024/12/10/XXX_Out/
@@ -18,7 +19,6 @@ http://example.com/2024/06/03/tiktok3/
 http://example.com/2024/04/28/respberryPi-positronJM/
 http://example.com/2024/04/28/SKRpico/
 http://example.com/2024/04/27/respberryPi2W-power/
-http://example.com/about/index.html
 http://example.com/2024/04/25/cv/
 http://example.com/2024/03/30/Voron2.4build/
 http://example.com/2024/03/01/voron0.2r1build/
